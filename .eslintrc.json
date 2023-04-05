@@ -16,6 +16,7 @@
       {
         "args": "none"
       }
-    ]
+    ],
+    "react/prop-types": "off"
   }
 }
