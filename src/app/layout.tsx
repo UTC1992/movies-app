@@ -1,8 +1,11 @@
-"use client"
-import "./globals.css"
-import { CssBaseline, ThemeProvider } from "@mui/material"
-import { theme } from "./theme/themes"
-import { Providers } from "../lib/redux/provider"
+'use client'
+import './globals.css'
+import { CssBaseline, ThemeProvider } from '@mui/material'
+
+import { theme } from './theme/themes'
+
+import Layout from '../components/Layout/Layout'
+import { Providers } from '../lib/redux/provider'
 
 
 export default function RootLayout({
@@ -18,7 +21,9 @@ export default function RootLayout({
         <ThemeProvider theme={theme}>
           <CssBaseline />
           <body>
-            {children}
+            <Layout>
+              {children}
+            </Layout>
           </body>
         </ThemeProvider>
       </Providers>

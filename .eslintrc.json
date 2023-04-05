@@ -11,12 +11,56 @@
     // ...
     "react/react-in-jsx-scope": "off",
     "no-undef": "off",
-    "no-unused-vars": [
+    "react/prop-types": "off",
+    "quotes": [
       "error",
+      "single",
       {
-        "args": "none"
+        "allowTemplateLiterals": true
       }
     ],
-    "react/prop-types": "off"
+    "prefer-destructuring": [
+      "error",
+      {
+        "VariableDeclarator": {
+          "array": false,
+          "object": true
+        },
+        "AssignmentExpression": {
+          "array": false,
+          "object": true
+        }
+      },
+      {
+        "enforceForRenamedProperties": false
+      }
+    ],
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "always-and-inside-groups",
+        "groups": [
+          [
+            "builtin",
+            "external"
+          ],
+          "internal",
+          "sibling",
+          "index",
+          "parent",
+          "object"
+        ],
+        "alphabetize": {
+          "order": "asc", /* sort in ascending order. Options: ["ignore", "asc", "desc"] */
+          "caseInsensitive": true /* ignore case. Options: [true, false] */
+        }
+      }
+    ],
+    "react/jsx-one-expression-per-line": [
+      "error",
+      {
+        "allow": "single-child"
+      }
+    ]
   }
 }

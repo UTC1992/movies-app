@@ -1,14 +1,28 @@
-import { ReactNode } from "react"
+import { AppBar, Box, Button, Toolbar, Typography } from '@mui/material'
 
-interface INavbar {
-  children: ReactNode
-}
+import { SpanStyle } from './styles'
 
-const Navbar: React.FC<INavbar> = ({ children }) => {
+const Navbar: React.FC = () => {
   return (
-    <div>
-      {children}
-    </div>
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static">
+        <Toolbar>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            DEMO Streaming
+          </Typography>
+          <Button color="inherit">
+            <SpanStyle>
+              Login
+            </SpanStyle>
+          </Button>
+          <Button variant='contained' color="secondary">
+            <SpanStyle>
+              Start your free trial
+            </SpanStyle>
+          </Button>
+        </Toolbar>
+      </AppBar>
+    </Box>
   )
 }
 

@@ -8,5 +8,8 @@ export const theme = createTheme({
     primary: {
       main: purple[500],
     },
+    secondary: {
+      main: '#000000',
+    },
   },
 })

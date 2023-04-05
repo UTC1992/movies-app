@@ -1,11 +1,11 @@
-"use client"
-import { Button } from "@mui/material";
+'use client'
+import TitleBar from '../../components/TitleBar/TitleBar';
 
 export default function Home() {
   return (
     <main>
+      <TitleBar title="Popular Titles" />
       <h1>hello world</h1>
-      <Button variant="contained" color="primary">HI</Button>
     </main>
   )
 }
