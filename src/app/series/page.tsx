@@ -1,6 +1,6 @@
 const SeriesPage = () => {
   return (
-    <div>series</div>
+    <div>seriessdf</div>
   )
 }
 

@@ -61,6 +61,12 @@
       {
         "allow": "single-child"
       }
+    ],
+    "react/jsx-max-props-per-line": [
+      2,
+      {
+        "when": "multiline"
+      }
     ]
   }
 }

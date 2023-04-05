@@ -3,9 +3,9 @@ import TitleBar from '../../components/TitleBar/TitleBar';
 
 export default function Home() {
   return (
-    <main>
+    <div>
       <TitleBar title="Popular Titles" />
-      <h1>hello world</h1>
-    </main>
+      <h1>Type of streamings</h1>
+    </div>
   )
 }
