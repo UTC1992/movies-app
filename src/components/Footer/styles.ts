@@ -41,3 +41,18 @@ export const DividerStyle = styled(Divider)(() => ({
   borderColor: theme.palette.background.paper,
   marginRight: '0.5rem',
 }))
+
+export const RowStyle = styled(Box)(() => ({
+  display: 'flex',
+  flexDirection: 'row',
+  flexWrap: 'wrap',
+  justifyContent: 'space-between',
+  width: '100%',
+}))
+
+export const ContainerSocialIconsStyle = styled(Box)(() => ({
+  display: 'flex',
+  flexDirection: 'row',
+  flexWrap: 'wrap',
+  columnGap: '1.5rem',
+}))

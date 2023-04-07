@@ -1,7 +1,7 @@
 import { Box, Typography } from '@mui/material';
 import Image from 'next/image';
 
-import { DividerStyle, LinkStyle, MenuItemStyle, MenuListStyle, ToolbarStyle } from './styles';
+import { ContainerSocialIconsStyle, DividerStyle, LinkStyle, MenuItemStyle, MenuListStyle, RowStyle, ToolbarStyle } from './styles';
 
 import { menuItems } from '../../constants/menu-bottom';
 
@@ -30,44 +30,49 @@ const Footer = () => {
           Copyright © DEMO Streaming All Right Reserved
         </Typography>
       </Box>
-      <Box>
-        <Image
-          src="/social/facebook-white.svg"
-          alt='Logo facebook'
-          height={30}
-          width={30}
-        />
-        <Image
-          src="/social/twitter-white.svg"
-          alt='Logo facebook'
-          height={30}
-          width={30}
-        />
-        <Image
-          src="/social/instagram-white.svg"
-          alt='Logo facebook'
-          height={30}
-          width={30}
-        />
-        <Image
-          src="/store/app-store.svg"
-          alt='Logo facebook'
-          height={50}
-          width={200}
-        />
-        <Image
-          src="/store/play-store.svg"
-          alt='Logo facebook'
-          height={50}
-          width={200}
-        />
-        <Image
-          src="/store/windows-store.svg"
-          alt='Logo facebook'
-          height={50}
-          width={200}
-        />
-      </Box>
+      <RowStyle>
+        <ContainerSocialIconsStyle>
+          <Image
+            src="/social/facebook-white.svg"
+            alt='Logo facebook'
+            height={30}
+            width={30}
+          />
+          <Image
+            src="/social/twitter-white.svg"
+            alt='Logo facebook'
+            height={30}
+            width={30}
+          />
+          <Image
+            src="/social/instagram-white.svg"
+            alt='Logo facebook'
+            height={30}
+            width={30}
+          />
+        </ContainerSocialIconsStyle>
+        <Box>
+
+          <Image
+            src="/store/app-store.svg"
+            alt='Logo facebook'
+            height={50}
+            width={200}
+          />
+          <Image
+            src="/store/play-store.svg"
+            alt='Logo facebook'
+            height={50}
+            width={200}
+          />
+          <Image
+            src="/store/windows-store.svg"
+            alt='Logo facebook'
+            height={50}
+            width={200}
+          />
+        </Box>
+      </RowStyle>
     </ToolbarStyle>
   )
 }
