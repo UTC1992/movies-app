@@ -3,9 +3,9 @@ import { CardContent, Typography } from '@mui/material'
 import { CardTitleStyle, ContainerCardStyle, TextStyle } from './styles'
 
 interface ITitleCardProps {
-  title: string
-  description: string
-  onClick: () => void
+  title?: string
+  description?: string
+  onClick?: () => void
 }
 
 const TitleCard: React.FC<ITitleCardProps> = ({ title, description, onClick }) => {

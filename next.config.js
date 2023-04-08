@@ -4,6 +4,9 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  images: {
+    domains: ['streamcoimg-a.akamaihd.net'],
+  },
   async redirects() {
     return [
       {
