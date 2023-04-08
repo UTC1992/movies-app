@@ -6,11 +6,11 @@ import { theme } from '../../app/theme/themes'
 
 export const ContainerCardStyle = styled(Box)(() => ({
   cursor: 'pointer',
-  height: 200,
   width: 150,
   opacity: 1,
   '&:hover': {
     opacity: 0.8,
+    border: `2px solid ${theme.palette.background.paper}`,
   },
 }))
 

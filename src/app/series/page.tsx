@@ -16,7 +16,7 @@ const SeriesPage = () => {
     <Box>
       <TitleBar title="Popular Series" />
       <ContainerCardsStyle>
-        <Grid container spacing={2} justifyContent="space-evenly" flexWrap="wrap" rowGap={2}>
+        <Grid container spacing={1} justifyContent="space-evenly" flexWrap="wrap" rowGap={2}>
           {
             series.map((item) => (
               <Grid item key={`key-series-${item.title}`} sx={{ m: 1 }}>
